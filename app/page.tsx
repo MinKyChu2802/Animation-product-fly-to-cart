@@ -78,14 +78,10 @@ export default function Home() {
 
     // Get the coordinates of the product image relative to the viewport
     const productImageRect: any = productImage?.getBoundingClientRect();
-    // const productImageX = productImageRect?.left;
-    // const productImageY = productImageRect?.top;
 
     // Create a clone of the product image
     const clonedProductImage: any = productImage?.cloneNode();
     clonedProductImage.style.position = 'absolute';
-    // clonedProductImage.style.top = `${x}px`;
-    // clonedProductImage.style.left = `${y}px`;
     clonedProductImage.style.width = `100px`;
     clonedProductImage.style.height = "100px";
     clonedProductImage.style.background = "black"
